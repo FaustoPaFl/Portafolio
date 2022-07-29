@@ -1,6 +1,122 @@
-footer{
-    background-color: brown;
+body{
+    font-family: 'Alegreya', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    margin: 0;
 }
-#git-profile > img{
 
+nav{
+    background-color: rgb(24, 23, 23);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#navbar>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+#welcome-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(proyectos/city-night.jpg) ;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    height: 99.99vh;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    font-size: 1.19vw;
+    background-attachment: fixed;
+}
+
+#welcome-section div{
+    text-align: center;
+    background-color:hsla(204, 100%, 64%, 0.4);
+    width: 45%;
+}
+
+#welcome-section h1{
+    color: aliceblue;
+    font-size: 2vw;
+}
+
+#projects{
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    height: 100%;
+}
+
+#projects h2{
+ margin: 0;
+ padding-top: 100px;
+ padding-bottom: 0px;
+ color: aliceblue;
+ font-size: 3vw;
+ text-decoration: underline;
+}
+
+#projects div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 700px;
+    margin: 0;
+}
+
+#projects img{
+    height: 200px;
+    width: 300px;
+    margin: 0;
+}
+
+#projects img:hover{
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode:both;
+}
+@keyframes animation{
+    10%{height: 200px;
+        width: 300px;}
+    50%{height: 300px; width:400px ; }
+    100%{height: 300px; width:400px ;}
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(151, 148, 148);
+    padding-top: 100px;
+}
+
+footer h2{
+    margin: 0;
+    font-size: 50px;
+    border-bottom: solid black;
+    padding-bottom: 20px;
+}
+
+footer p{
+    padding-bottom: 10px;
+    
+}
+
+#git-profile > img{
+    max-height: 100%;
+    height: 80px;
+    padding-right: 50px;
+}
+
+#linkedin-profile > img{
+    max-height: 100%;
+    height: 80px;
 }
